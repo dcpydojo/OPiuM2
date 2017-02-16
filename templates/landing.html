@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+    <meta http-equiv="refresh" content="10" />
+</head>
+<body>
+    <ul id="navigation">
+    {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h1>My Webpage</h1>
+    {{ Title }}
+    <br>
+    {{ Location }}
+    <br>
+    {{ AppliesTo }}
+    <br>
+    {{ StatusType }}
+    <br>
+    {{ StatusWebPage }}
+    <br>
+    {{ ShortStatusMessage }}
+
+
+</body>
+</html>
