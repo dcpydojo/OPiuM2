@@ -12,6 +12,7 @@ def hello():
     r = requests.get(url)
 
     data = r.json()
+    # data['StatusType'] = 'Closed'
     if data.get('StatusType', None) == 'Open':
         data['background'] = 'red'
     else:
